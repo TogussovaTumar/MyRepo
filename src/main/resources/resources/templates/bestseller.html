@@ -1,0 +1,76 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  layout:decorate="layout/main.html ">
+<div layout:fragment="SContent">
+    <h1 class="text-center">
+        Оқылымдағы топ 5  кітаптар!
+    </h1>
+    <br>
+    <div class="text-center">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img th:src="${'https://avatars.mds.yandex.net/i?id=a8bc14ec2174f7431ade71488d14b854_l-5887690-images-thumbs&n=13'}" data-original="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png" imagefield="img" data-tu-max-width="800" data-tu-max-height="800" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png" class="t194__img t-width t-width_5 t-img t-animate t-zoomable loaded t-animate_started" data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.5" style="transition-delay: 0.5s;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Фиалки в марте</h5>
+                        <p>Сара Джио</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img th:src="${'https://i6.otzovik.com/2019/01/28/7624859/img/1059421_15940338.jpeg?size=604x403&quality=96&sign=37e216acb14ed75ccecaa4d79880a50a&type=album'}" data-original="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png" imagefield="img" data-tu-max-width="800" data-tu-max-height="800" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png" class="t194__img t-width t-width_5 t-img t-animate t-zoomable loaded t-animate_started" data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.5" style="transition-delay: 0.5s;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>До встерчи с тобой</h5>
+                        <p>Джоджо Мойес</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img th:src="${'https://www.kitapal.kz/media/7897/IMG_9070.png'}" data-original="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png"imagefield="img" data-tu-max-width="800" data-tu-max-height="800" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png" class="t194__img t-width t-width_5 t-img t-animate t-zoomable loaded t-animate_started" data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.5" style="transition-delay: 0.5s;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Махаббат қызық мол жылдар</h5>
+                        <p>Әзілхан Нұршайықов</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img th:src="${'https://avatars.mds.yandex.net/i?id=f7d7b360d2d285795de96976b5975445_l-5427097-images-thumbs&n=13'}" data-original="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png" imagefield="img" data-tu-max-width="800" data-tu-max-height="800" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png" class="t194__img t-width t-width_5 t-img t-animate t-zoomable loaded t-animate_started" data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.5" style="transition-delay: 0.5s;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>НИСЫ</h5>
+                        <p>Джен Синсеро</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img th:src="${'http://primuzee.ru/files/16089'}" data-original="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png" imagefield="img" data-tu-max-width="800" data-tu-max-height="800" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3633-3137-4939-b665-616462386235/image.png" class="t194__img t-width t-width_5 t-img t-animate t-zoomable loaded t-animate_started" data-animate-style="fadeinright" data-animate-group="yes" data-animate-order="2" data-animate-delay="0.5" style="transition-delay: 0.5s;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Титаник</h5>
+                        <p>Уолтер Лорд</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="text-center">
+            </h1>
+        </div>
+    </div>
+</div>
+</html>

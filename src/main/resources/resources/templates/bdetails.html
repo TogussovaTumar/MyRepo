@@ -1,0 +1,40 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layout/main.html">
+<div layout:fragment="SContent">
+    <form th:action="@{'/saveitem'}" method="post" th:if="${rrr!=null}">
+        <input type="hidden" name="id" th:value="${rrr.id}">
+        <h1 class="text-center">
+            Book Details
+        </h1>
+        <div class="col-6 mx-auto">
+            <div class="row mt-3">
+                <div class="col-3">
+                    <label>BOOK NAME: </label>
+                </div>
+            </div>
+            <div class="col">
+                <input type="text" name="name" class="form-control" readonly th:value="${rrr.name}">
+            </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <label>AUTHOR: </label>
+                </div>
+            </div>
+            <div class="col">
+                <input type="text" name="author" class="form-control" readonly th:value="${rrr.author}">
+            </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <label>GENRE: </label>
+                </div>
+            </div>
+            <div class="col">
+                <input type="text" name="genre" class="form-control" readonly th:value="${rrr.genre}">
+            </div>
+            <br>
+        </div>
+    </form>
+</div>
+</div>
+
+</html>

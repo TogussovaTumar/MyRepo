@@ -1,0 +1,85 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  layout:decorate="layout/main.html ">
+
+<div layout:fragment="SContent">
+
+    <h1 class="text-center">
+
+        Соңғы тіркелген кітаптар!!!
+
+    </h1>
+
+    <div class="container">
+
+        <div class="row mt-2">
+
+            <div class="col-12">
+
+                <table class="table table-striped">
+
+                    <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>BOOK NAME</th>
+
+                        <th>AUTHOR</th>
+
+                        <th>PUBLISHING</th>
+
+                        <th>Description</th>
+
+                        <th>NUMBER OF BOOK</th>
+
+                        <th>GENRE</th>
+
+                        <th width="7%">DETAILS</th>
+
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    <tr th:each="it : ${list}">
+
+                        <td th:text="${it.id}"></td>
+
+                        <td th:text="${it.name}"></td>
+
+                        <td th:text="${it.author}"></td>
+
+                        <td th:text="${it.publishing}"></td>
+
+                        <td th:text="${it.description}"></td>
+
+                        <td th:text="${it.numberOfBook}"></td>
+
+                        <td th:text="${it.genre}"></td>
+
+                        <td>
+
+                            <a th:href="@{'/details/' + ${it.id}}" class="btn btn-info btn sm" >DETAILS</a>
+
+                        </td>
+
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</html>
